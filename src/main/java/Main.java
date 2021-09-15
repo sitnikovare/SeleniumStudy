@@ -14,17 +14,28 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "chromedriver_win32/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
+        /*------------------------------------------------------------------------------------------------*/
+
         //явное ожидание
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         //неявное ожидание
-        WebElement element = (new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.presenceOfElementLocated(By.id("123"))));
+        //WebElement element = (new WebDriverWait(driver, Duration.ofSeconds(10))
+        //        .until(ExpectedConditions.presenceOfElementLocated(By.id("123"))));
 
-        driver.get("https://google.com");
+        //driver.get("https://google.com");
+        //WebElement input = driver.findElement(By.xpath("//input[aria-label='Найти']"));
+        //input.click();
 
-        WebElement input = driver.findElement(By.xpath("//input[aria-label='Найти']"));
+        /*------------------------------------------------------------------------------------------------*/
 
-        input.click();
+//        driver.get("https://www.avito.ru/rossiya/avtomobili");
+//        WebElement element = driver.findElement(By.xpath("(//a[text()='Личные вещи'])[1]"));
+//
+//        String par = element.getAttribute("offsetWidth");
+//        System.out.println(par);
+
+        /*------------------------------------------------------------------------------------------------*/
+
         }
 }
