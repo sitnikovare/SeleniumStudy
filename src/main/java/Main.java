@@ -31,11 +31,14 @@ public class Main {
 
 //        driver.get("https://www.avito.ru/rossiya/avtomobili");
 //        WebElement element = driver.findElement(By.xpath("(//a[text()='Личные вещи'])[1]"));
-//
 //        String par = element.getAttribute("offsetWidth");
 //        System.out.println(par);
 
         /*------------------------------------------------------------------------------------------------*/
 
+        driver.get("https://www.avito.ru/rossiya");
+        WebElement element = driver.findElement(By.xpath("(//a[text()='Личные вещи'])[1]"));
+        String par = element.getText();
+        System.out.println(par);
         }
 }
