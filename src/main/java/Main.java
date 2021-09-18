@@ -1,4 +1,5 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,9 +37,24 @@ public class Main {
 
         /*------------------------------------------------------------------------------------------------*/
 
-        driver.get("https://www.avito.ru/rossiya");
-        WebElement element = driver.findElement(By.xpath("(//a[text()='Личные вещи'])[1]"));
-        String par = element.getText();
-        System.out.println(par);
-        }
+//        driver.get("https://www.avito.ru/rossiya");
+//        WebElement element = driver.findElement(By.xpath("(//a[text()='Личные вещи'])[1]"));
+//        String par = element.getText();
+//        System.out.println(par);
+
+        /*------------------------------------------------------------------------------------------------*/
+
+//        driver.get("https://dev.by");
+//        WebElement element = driver.findElement(By.xpath("//a[text()='Вход']"));
+//        String par = element.getCssValue("display");
+//        System.out.println(par);
+
+        /*------------------------------------------------------------------------------------------------*/
+
+
+        driver.get("https://udemy.com");
+        WebElement element = driver.findElement(By.xpath("//input[@name='q']"));
+
+        element.sendKeys("Java", Keys.ENTER);
+    }
 }
